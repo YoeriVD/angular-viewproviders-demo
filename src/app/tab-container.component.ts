@@ -37,7 +37,7 @@ export class LogComponent {
 @Component({
     selector: 'tab-container',
     template: '<div class="tab-container"><log></log><ng-content></ng-content></div>', //this log here should be specific!!
-    viewProviders: [{ provide: TabContainerService, useClass: SpecificTabContainerService }], //this makes sure that de Log in our template gets the specific, but anything in ng-content will get the normal one
+    viewProviders: [{ provide: TabContainerService, useClass: SpecificTabContainerService }], //this makes sure that the Log in our template gets the specific, but anything in ng-content will get the normal one
     //providers: [{ provide: TabContainerService, useClass: SpecificTabContainerService }] //this overrides any call to TabContainerService (view or ng-content) and will return SpecificTabContainerService
 })
 export class TabContainerComponent implements OnInit {
