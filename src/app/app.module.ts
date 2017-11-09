@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { TabContainerComponent, LogComponent, TabComponent, TabContainerService } from './tab-container.component';
 
 import { AppComponent } from './app.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, TabContainerComponent, TabComponent, LogComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TabContainerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
